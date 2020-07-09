@@ -38,10 +38,6 @@ class InitCommand extends Command
      */
     public function handle()
     {
-        $this->info('Execute migrate first, migrating...');
-        $this->call('migrate');
-        $this->info('Seeding datas');
-        $this->call('db:seed',["--class"=>"WorldTablesSeeder"]);
-        $this->info('Done!');
+        // 
     }
 }
