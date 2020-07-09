@@ -1,6 +1,6 @@
-# Laravel World Database
+# Lumen World Models for Laravel World Database
 
-This package focused on World Countries, Regions, and Cities database with locale support for Laravel.
+This package focused on World Countries, Regions, and Cities database with locale support for Lumen.
 
 ## Conceptions
 
@@ -55,31 +55,14 @@ $china->local_currency_name; // 人民币
 
 ### Localization
 
-Right now, only English(default and fallback) and Chinese-Simp `zh-cn` are supported. Locale settings is following Laravel project settings in `config/app.php`.
+Right now, only English(default and fallback) and Chinese-Simp `zh-cn` are supported. Locale settings is following Lumen project settings in `config/app.php`.
 
 ## Setup
 
 - `composer require`
 
 ```php
-composer require khsing/world
-```
-
-- Add Service Provider into `config/app.php`
-
-```php
-'providers' => [
-    // ...
-    Khsing\World\WorldServiceProvider::class,
-]
-```
-
-- Publish and init
-
-```php
-php artisan vendor:publish --force --provider="Khsing\World\WorldServiceProvider"
-composer dump-autoload
-php artisan world:init
+composer require brianfp/lumen-world
 ```
 
 ## Usage
